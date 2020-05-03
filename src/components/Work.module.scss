@@ -1,0 +1,30 @@
+@mixin desktop {
+    @media (min-width: 768px) {
+        @content;
+    }
+ }
+
+.container {
+    .categories {
+        & > * {
+            .videos {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+
+                iframe {
+                    padding: 1rem;
+
+                    @include desktop {
+                        padding: 0rem;
+                    }
+                }
+
+                @include desktop {
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}

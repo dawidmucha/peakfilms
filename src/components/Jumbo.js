@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Jumbo.module.css'
+import styles from './Jumbo.module.scss'
 import logo from '../resources/logo.png'
 
 const Jumbo = () => {

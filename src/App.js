@@ -5,11 +5,12 @@ import Work from './components/Work'
 import Clients from './components/Clients'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import styles from './App.module.scss'
 import './App.css'
 
 function App() {
   return (
-    <div>
+    <div className={styles.app}>
       <Jumbo />
       <About />
       <Work />
