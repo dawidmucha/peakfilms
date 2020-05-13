@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className={styles.container}>
             <p className={styles.content}>
-                dawid mucha 2020 wszystkie prawa zastrzeżone
+                dawid mucha 2020 wszystkie prawa zastrzeżone czy coś
             </p>
         </footer>
     )
