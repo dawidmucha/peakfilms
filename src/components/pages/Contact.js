@@ -1,14 +1,17 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styles from './Contact.module.scss'
 
 const Contact = () => {
     return (
         <div className={styles.container}>
             <form>
-                <h2>KONTAKT</h2>
+                <div className={styles.title}>
+                    <h2>KONTAKT</h2>
+                    <hr />
+                </div>
                 <label className={styles.email}>
                     <p>email</p>
-                    <input type='text' placeholder='email' />
+                    <input type='text' placeholder='' />
                 </label>
                 <label className={styles.message}>
                     <p>treść</p>

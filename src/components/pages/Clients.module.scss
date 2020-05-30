@@ -1,0 +1,40 @@
+@mixin desktop {
+    @media (min-width: 768px) {
+        @content;
+    }
+ }
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        h1 {
+            padding-top: 4rem;
+        }
+    }
+
+    .logos {
+        flex-grow: 1;
+        overflow-x: scroll;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+
+        &::-webkit-scrollbar { 
+            display: none;  /* Safari and Chrome */
+        }
+
+        display: flex;
+        flex-wrap: nowrap;
+
+        & > * {
+            height: auto;
+            width: 25vw;
+            
+            @include desktop {
+                width: 16.6vw;
+            }
+        }
+    }
+}

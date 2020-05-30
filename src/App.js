@@ -1,10 +1,11 @@
 import React from 'react'
-import Jumbo from './components/Jumbo'
-import About from './components/About'
-import Work from './components/Work'
-import Clients from './components/Clients'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import Jumbo from './components/pages/Jumbo'
+import About from './components/pages/About'
+import Work from './components/pages/Work'
+import Clients from './components/pages/Clients'
+import Contact from './components/pages/Contact'
+import Footer from './components/pages/Footer'
+import Socials from './components/Socials'
 import styles from './App.module.scss'
 import { GoogleReCaptchaProvider, GoogleReCaptcha } from 'react-google-recaptcha-v3'
 import './App.css'
@@ -18,6 +19,9 @@ function App() {
         <Work />
         <Clients />
         <Contact />
+        <div className={styles.componentSocials}>
+          <Socials />
+        </div>
         <Footer />
         <GoogleReCaptcha onVerify={console.log('i am not a robot')} />
       </GoogleReCaptchaProvider>

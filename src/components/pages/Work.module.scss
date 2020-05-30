@@ -5,8 +5,18 @@
  }
 
 .container {
+    h1 {
+        padding-top: 1rem;
+
+        @include desktop {
+            padding-top: 4rem;
+        }
+    }
+
     .categories {
         & > * {
+            margin-bottom: 4rem;
+
             .videos {
                 display: flex;
                 flex-direction: column;
@@ -14,10 +24,14 @@
                 align-items: center;
 
                 iframe {
+                    margin: 0;
                     padding: 1rem;
-
+                    width: 100%;
+                    height: auto;
+                    
                     @include desktop {
                         padding: 0rem;
+                        width: 33%;
                     }
                 }
 
