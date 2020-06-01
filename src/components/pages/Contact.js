@@ -4,7 +4,7 @@ import styles from './Contact.module.scss'
 const Contact = () => {
     return (
         <div className={styles.container}>
-            <form>
+            <form action="mailto:kontakt@peakfilms.pl">
                 <div className={styles.title}>
                     <h2>KONTAKT</h2>
                     <hr />

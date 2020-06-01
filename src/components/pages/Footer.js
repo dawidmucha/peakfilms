@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className={styles.container}>
             <p className={styles.content}>
-                dawid mucha 2020 wszystkie prawa zastrzeżone czy coś
+                by <a href='https://github.com/dawidmucha'>dawid mucha</a>
             </p>
         </footer>
     )
