@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Jumbo.module.scss'
 import Socials from '../Socials'
-import logo from '../../resources/logo.png'
+import logo from '../../resources/logo.svg'
 
 const Jumbo = () => {
     return (
