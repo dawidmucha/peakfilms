@@ -1,7 +1,7 @@
 import React from 'react'
-import fb from '../resources/socials/fb.png'
-import ig from '../resources/socials/ig.png'
-import yt from '../resources/socials/yt.png'
+import fb from '../resources/icons/facebook.svg'
+import ig from '../resources/icons/instagram.svg'
+import yt from '../resources/icons/youtube.svg'
 import styles from './Socials.module.scss'
 
 const Socials = () => {

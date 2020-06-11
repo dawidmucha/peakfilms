@@ -16,6 +16,14 @@ h1 {
     color: #AD7835;
 }
 
+h2 {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 1rem 3rem;
+    color: #AD7835;
+}
+
 h3 {
     color: #f6f1ea;
     text-align: center;
@@ -23,6 +31,7 @@ h3 {
 
 h6 {
     margin: 0;
+    font-size: 0.6rem;
 }
 
 hr {
