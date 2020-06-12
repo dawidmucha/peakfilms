@@ -40,7 +40,7 @@ const Contact = () => {
 
                     <div className={styles.phone}>
                         <img src={phone} alt='phone' />
-                        <p>797649639</p>
+                        <p><span className={styles.phonePart}>797</span><span className={styles.phonePart}>649</span><span className={styles.phonePart}>639</span></p>
                     </div>
 
                     <div className={styles.location}>

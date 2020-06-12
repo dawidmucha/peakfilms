@@ -61,6 +61,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            .phone p .phonePart {
+                margin-left: 0.5rem;
+            }
     
             & > * {
                 display: flex;
@@ -74,11 +78,7 @@
                 }
     
                 img {
-                    height: 3.5rem;
-
-                    @include desktop {
-                        height: 2.5rem;
-                    }
+                    height: 2.5rem;
                 }
             }
 

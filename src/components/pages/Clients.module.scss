@@ -8,37 +8,23 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    transition-timing-function: ease;
 
-    .title {
-        h1 {
-            padding-top: 4rem;
-        }
-    }
-
-    .logos {
-        background-color: #cccccc;
-        flex-grow: 1;
-        overflow-x: scroll;
-        -ms-overflow-style: none;  /* Internet Explorer 10+ */
-        scrollbar-width: none;  /* Firefox */
-
-        &::-webkit-scrollbar { 
-            display: none;  /* Safari and Chrome */
+    .imageContainer {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 50%;
+        width: 24vw;
+        height: 24vw;
+        
+        @include desktop {
+            width: 16vw;
+            height: 16vw;
         }
 
-        display: flex;
-        flex-wrap: nowrap;
-
-        & > * {
-            border: 2px solid black;
-            border-top: 4px dashed #222222;
-            height: 25vw;
-            width: 25vw;
-            
-            @include desktop {
-                width: 16.6vw;
-                height: 16.6vw;
-            }
+        img {
+            height: 100%;
+            width: 100%;
         }
     }
 }

@@ -20,7 +20,7 @@ function App() {
         <Clients />
         <Contact />
         <div className={styles.componentSocials}>
-          <h3>Lub skontaktuj się z nami przez nasze media społecznościowe</h3>
+          <h3>Skontaktuj się z nami przez nasze media społecznościowe:</h3>
           <Socials />
         </div>
         <Footer />

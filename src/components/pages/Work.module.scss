@@ -15,7 +15,11 @@
 
     .categories {
         & > * {
-            margin-bottom: 4rem;
+            margin-bottom: 6rem;
+
+            h3 {
+                font-size: 1.5rem;
+            }
 
             .videos {
                 display: flex;
@@ -26,12 +30,12 @@
                 iframe {
                     margin: 0;
                     padding: 0;
-                    width: 100%;
-                    height: auto;
+                    width: 100vw;
+                    height: 56.25vw;
                     
                     @include desktop {
-                        padding: 0rem;
-                        width: 33%;
+                        width: 33.33vw;
+                        height: 18.74vw;
                     }
                 }
 
