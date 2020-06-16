@@ -29,17 +29,17 @@ const Work = () => {
                 <div className={styles.shows}>
                     <h3>RELACJE Z IMPREZ</h3>
                     <div className={styles.videos}>
-                        <iframe title='Festiwal Sztuki Ulicznej - Puzzle Kultury - Wisła 2019' src="https://www.youtube.com/embed/ThCmgXcEBjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
-                        <iframe title='Park z Tradycją - Zapowiedź Wiślańskich Dożynek' src="https://www.youtube.com/embed/ndKUgCjRMn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
-                        <iframe title='Jarmark z Tradycją - Wisła' src="https://www.youtube.com/embed/PMAzDGrffRM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                        <iframe title='Otwarcie Sezonu Uzdrowiskowego 2019 - Ustroń' src="https://www.youtube.com/embed/mZM-dYbaUy4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                        <iframe title='XV Zimowy Wjazd na Równicę' src="https://www.youtube.com/embed/qnyPeg16Pgo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                        <iframe title='Beskidy WinterGo' src="https://www.youtube.com/embed/nUd_0gr6EFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
                     </div>
                 </div>
                 <div className={styles.adverts}>
                     <h3>SPOTY REKLAMOWE</h3>
                     <div className={styles.videos}>
+                        <iframe title='Ustroń - Góry Radości' src="https://www.youtube.com/embed/v9YQnAfBWQM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
                         <iframe title='Brudne Tatuaże - Bartłomiej Błanik' src="https://www.youtube.com/embed/bwmjtLb0xto" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
                         <iframe title='Phoenix Poi Group FireShow' src="https://www.youtube.com/embed/4uHayGyXIEc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
-                        <iframe title='Rajdowy Ustroń - Zapowiedź' src="https://www.youtube.com/embed/DkW8Ymgc-OM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
                     </div>
                 </div>
             </div>

@@ -2,19 +2,6 @@ import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from './Clients.module.scss'
-import logo1 from '../../resources/clients/1-cieszyn.png'
-import logo2 from '../../resources/clients/2-ustron.png'
-import logo3 from '../../resources/clients/3-wisla.png'
-import logo4 from '../../resources/clients/4-browar-cieszyn.png'
-import logo5 from '../../resources/clients/5-wislanskie-ck.png'
-import logo6 from '../../resources/clients/6-rdzawe-diamenty.png'
-import logo7 from '../../resources/clients/7-krakowska-pracownia-tat.png'
-import logo8 from '../../resources/clients/8-phoenix.png'
-import logo9 from '../../resources/clients/9-polodnie-events.png'
-import logo10 from '../../resources/clients/10-issa-tour.png'
-import logo11 from '../../resources/clients/11-skolnity.png'
-import logo12 from '../../resources/clients/12-ski-carv.png'
-import logo13 from '../../resources/clients/13-gastro-mix.png'
 
 const responsive = {
     desktop: {
@@ -54,19 +41,45 @@ const Clients = () => {
                 itemClass="carousel-item-padding-40-px"
                 centerMode={true}
             >
-                <div className={styles.imageContainer}><img src={logo1} alt='logo1' /></div>
-                <div className={styles.imageContainer}><img src={logo2} alt='logo2' /></div>
-                <div className={styles.imageContainer}><img src={logo3} alt='logo3' /></div>
-                <div className={styles.imageContainer}><img src={logo4} alt='logo4' /></div>
-                <div className={styles.imageContainer}><img src={logo5} alt='logo5' /></div>
-                <div className={styles.imageContainer}><img src={logo6} alt='logo6' /></div>
-                <div className={styles.imageContainer}><img src={logo7} alt='logo7' /></div>
-                <div className={styles.imageContainer}><img src={logo8} alt='logo8' /></div>
-                <div className={styles.imageContainer}><img src={logo9} alt='logo9' /></div>
-                <div className={styles.imageContainer}><img src={logo10} alt='logo10' /></div>
-                <div className={styles.imageContainer}><img src={logo11} alt='logo11' /></div>
-                <div className={styles.imageContainer}><img src={logo12} alt='logo12' /></div>
-                <div className={styles.imageContainer}><img src={logo13} alt='logo13' /></div>
+                <a target="_blank" rel="noopener noreferrer" href='https://www.facebook.com/CieszynRobiWrazenie/'>
+                    <div className={styles.imageContainer} id='logo1'><p>Cieszyn Robi Wrażenie</p></div>
+                </a>
+                <a target="_blank" rel="noopener noreferrer"  href='http://ustron.pl/aktualnosci#/newsy/'>
+                    <div className={styles.imageContainer} id='logo2'><p>Ustroń - Góry Radości</p></div>
+                </a>
+                <a target="_blank" rel="noopener noreferrer"  href='https://wisla.pl/'>
+                    <div className={styles.imageContainer} id='logo3'><p>Miasto Wisła</p></div>
+                </a>
+                <a target="_blank" rel="noopener noreferrer"  href='https://www.browarcieszyn.pl/'>
+                    <div className={styles.imageContainer} id='logo4'><p>Browar Zamkowy Cieszyn</p></div>
+                </a>
+                <a target="_blank" rel="noopener noreferrer"  href='https://www.facebook.com/WCKWisla'>
+                    <div className={styles.imageContainer} id='logo5'><p>Wiślańskie Centrum Kultury</p></div>
+                </a>
+                <a target="_blank" rel="noopener noreferrer"  href='https://www.facebook.com/rdzawe.diamenty/'>
+                    <div className={styles.imageContainer} id='logo6'><p>Rdzawe Diamenty</p></div>
+                </a>
+                <a target="_blank" rel="noopener noreferrer"  href='https://www.facebook.com/pracownia.tattoo.krk/'>
+                    <div className={styles.imageContainer} id='logo7'><p>Krakowska Pracownia Tatuażu</p></div>
+                </a>
+                <a target="_blank" rel="noopener noreferrer"  href='http://phoenix-group.pl/'>
+                    <div className={styles.imageContainer} id='logo8'><p>Grupa Phoenix</p></div>
+                </a>
+                <a target="_blank" rel="noopener noreferrer"  href='http://www.poludnieevents.pl/'>
+                    <div className={styles.imageContainer} id='logo9'><p>Południe Events</p></div>
+                </a>
+                <a target="_blank" rel="noopener noreferrer"  href='http://www.issatour.holiday/'>
+                    <div className={styles.imageContainer} id='logo10'><p>Issa Tour</p></div>
+                </a>
+                <a target="_blank" rel="noopener noreferrer"  href='https://skolnity.pl/'>
+                    <div className={styles.imageContainer} id='logo11'><p>Skolnity</p></div>
+                </a>
+                <a target="_blank" rel="noopener noreferrer"  href='https://www.skicarv.pl/'>
+                    <div className={styles.imageContainer} id='logo12'><p>Ski-Carv</p></div>
+                </a>
+                <a target="_blank" rel="noopener noreferrer"  href='https://gastromix.pl/'>
+                    <div className={styles.imageContainer} id='logo13'><p>Gastro-Mix</p></div>
+                </a>
             </Carousel>
         </div>
     )
