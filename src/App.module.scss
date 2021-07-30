@@ -1,0 +1,17 @@
+.app {
+    display: flex;
+    flex-direction: column;  
+    width: calc(100vw - (100vw - 100%));
+}
+
+.componentSocials {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        padding: 0 3rem;
+    }
+}
+

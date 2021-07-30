@@ -1,0 +1,43 @@
+@mixin desktop {
+    @media (min-width: 768px) {
+        @content;
+    }
+ }
+
+.window {
+    
+    display: flex;
+    flex-direction: column;
+
+    .description {
+        font-size: 1.5rem;
+        
+
+        .text {
+            padding: 0.6rem 0.6rem;
+            text-align: justify;
+            background-color: #373737;
+            
+            @include desktop {
+                padding: 3rem 15%;
+            }
+        }
+    }
+
+    .portrait {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: auto;
+            
+            @include desktop {
+                width: 70%;
+                position: relative;
+                top: -1.2rem;
+            }
+        }
+    }
+}

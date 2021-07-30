@@ -1,0 +1,105 @@
+@mixin desktop {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #373737;
+    padding: 3rem;
+    margin-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        margin-bottom: 2rem;
+    } 
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin: 0.2rem 0;
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            input, textarea {
+                width: 98.5%;
+                padding: 0.3rem;
+                font-size: 1.2rem;
+
+                resize: none;
+                font-family: sans-serif;
+            }
+        }
+
+        .labelMessage, button {
+            @include desktop {
+                grid-column: span 2;
+            }
+        }
+
+        button {
+            border: none;
+            background-color: #AD7835;
+            color: white;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 0.2rem;
+            margin: 1rem;
+            box-shadow: 0px 6px 20px rgba(1, 1, 1, 0.5);
+        }
+
+        .icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .phone p .phonePart {
+                margin-left: 0.5rem;
+            }
+    
+            & > * {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 0.4rem;
+    
+                p {
+                    margin: 0.5rem;
+                    font-size: 1.3rem;
+                }
+    
+                img {
+                    height: 2.5rem;
+                }
+            }
+
+            @include desktop {
+                grid-row: span 3;
+                padding-left: 2rem;
+                justify-self: center;
+                align-self: center;
+            }
+        }
+
+        @include desktop {
+            display: grid;
+            grid-template: auto auto auto auto auto / 1fr auto;
+            grid-auto-flow: column;
+        }
+    }
+
+    .formula {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+}

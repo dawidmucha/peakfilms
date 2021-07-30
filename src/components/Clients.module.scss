@@ -1,0 +1,111 @@
+@mixin desktop {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition-timing-function: ease;
+
+    a {
+        .imageContainer {
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 50%;
+            width: 24vw;
+            height: 24vw;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: black;
+            font-size: 1.4rem;
+
+            @include desktop {
+                width: 16vw;
+                height: 16vw;
+                font-size: 2rem;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-size: 24vw;
+                width: 24vw;
+                height: 24vw;
+                transition: .05s ease-out;
+                
+                @include desktop {
+                    background-size: 16vw;
+                    height: 16vw;
+                    width: 16vw;
+                }
+            }
+
+            &:hover::before {
+                filter: blur(4px) opacity(0.5);
+            }
+
+            p {
+                display: none;
+                width: 90%;
+                height: 90%;
+            }
+
+            &:hover > p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                z-index: 1;
+            }
+        }
+
+        
+    }
+
+    a div:global(#logo1)::before {
+        background-image: url("../resources/clients/1-cieszyn.png");
+    }
+    a div:global(#logo2)::before {
+        background-image: url("../resources/clients/2-ustron.png");
+    }
+    a div:global(#logo3)::before {
+        background-image: url("../resources/clients/3-wisla.png");
+    }
+    a div:global(#logo4)::before {
+        background-image: url("../resources/clients/4-browar-cieszyn.png");
+    }
+    a div:global(#logo5)::before {
+        background-image: url("../resources/clients/5-wislanskie-ck.png");
+    }
+    a div:global(#logo6)::before {
+        background-image: url("../resources/clients/6-rdzawe-diamenty.png");
+    }
+    a div:global(#logo7)::before {
+        background-image: url("../resources/clients/7-krakowska-pracownia-tat.png");
+    }
+    a div:global(#logo8)::before {
+        background-image: url("../resources/clients/8-phoenix.png");
+    }
+    a div:global(#logo9)::before {
+        background-image: url("../resources/clients/9-polodnie-events.png");
+    }
+    a div:global(#logo10)::before {
+        background-image: url("../resources/clients/10-issa-tour.png");
+    }
+    a div:global(#logo11)::before {
+        background-image: url("../resources/clients/11-skolnity.png");
+    }
+    a div:global(#logo12)::before {
+        background-image: url("../resources/clients/12-ski-carv.png");
+    }
+    a div:global(#logo13)::before {
+        background-image: url("../resources/clients/13-gastro-mix.png");
+    }
+}
+

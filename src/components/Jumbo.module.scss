@@ -1,0 +1,38 @@
+@mixin desktop {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+.container {
+    background-image: url('../resources/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    width: calc(100vw - (100vw - 100%));
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .componentSocials {
+        text-align: center;
+
+        @include desktop {
+            text-align: right;
+            margin-right: 4rem;
+        }
+    }
+}
+
+.logo {
+    display: block;
+    height: 60vw;
+    max-height: 20rem;
+    margin: 0rem auto;
+    
+    @include desktop {
+        height: 35vw;
+        margin-left: 6%;
+        margin-top: 1%;
+    }
+}

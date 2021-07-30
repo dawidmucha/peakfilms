@@ -1,7 +1,7 @@
 import React from 'react'
-import location from '../../resources/icons/location.svg'
-import email from '../../resources/icons/email.svg'
-import phone from '../../resources/icons/phone.svg'
+import location from '../resources/icons/location.svg'
+import email from '../resources/icons/email.svg'
+import phone from '../resources/icons/phone.svg'
 import styles from './Contact.module.scss'
 
 const Contact = () => {

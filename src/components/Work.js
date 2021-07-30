@@ -15,7 +15,7 @@ const Work = () => {
                     <div className={styles.videos}>
                         <iframe title='Gojiczek Zielony - Wokół Wielkanocy' src="https://www.youtube.com/embed/o9NHpzh64Zo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
                         <iframe title='HANSA BRANDENBURG C1 - ZABYTKOMANIA 2019' src="https://www.youtube.com/embed/_UUPx79ea1A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
-                        <iframe src="https://www.youtube.com/embed/i-7hsyU9PMk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe title="???" src="https://www.youtube.com/embed/i-7hsyU9PMk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div className={styles.tourism}>
@@ -37,7 +37,7 @@ const Work = () => {
                 <div className={styles.adverts}>
                     <h3>SPOTY REKLAMOWE</h3>
                     <div className={styles.videos}>
-                        <iframe src="https://www.youtube.com/embed/15pOG2OCgzY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe title="????" src="https://www.youtube.com/embed/15pOG2OCgzY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <iframe title='Brudne Tatuaże - Bartłomiej Błanik' src="https://www.youtube.com/embed/bwmjtLb0xto" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
                         <iframe title='Phoenix Poi Group FireShow' src="https://www.youtube.com/embed/4uHayGyXIEc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
                     </div>
