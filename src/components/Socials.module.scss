@@ -1,15 +1,16 @@
 .container {
+    color: white;
+
     a {
         div {
             display: inline-flex;
             flex-direction: row;
             padding: 0.5rem;
             margin: 0.5rem;
+
+            img {
+                height: 4rem;
+            }
         }
     }
-}
-
-img {
-    height: 4rem;
-    color: green;
 }

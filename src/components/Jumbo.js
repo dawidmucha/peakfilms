@@ -8,7 +8,7 @@ const Jumbo = () => {
         <div className={styles.container}>
             <img src={logo} alt='logo' className={styles.logo} />
             <div className={styles.componentSocials}>
-                <Socials />
+                <Socials isGolden={false} />
             </div>
         </div>
     )

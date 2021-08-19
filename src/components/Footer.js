@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className={styles.container}>
             <h6 className={styles.content}>
-            <div>
+            <div className={styles.credits}>
                 Icons made by 
                 <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a>, 
                 <a href="https://www.flaticon.com/authors/becris" title="Becris"> Becris</a>, 
@@ -13,7 +13,9 @@ const Footer = () => {
                 <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn"> bqlqn </a> 
                 from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
             </div>
-            design by peakfilms, code by <a href='https://github.com/dawidmucha'>dawid mucha</a>
+            <div className={styles.author}>
+                design by peakfilms, code by <a href='https://github.com/dawidmucha'>dawid mucha</a>
+            </div>
             </h6>
         </footer>
     )

@@ -12,27 +12,36 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .logo {
+        display: block;
+        height: 60vw;
+        max-height: 20rem;
+        margin: 4rem auto;
+        margin-bottom: 0;
+        
+        @include desktop {
+            height: 35vw;
+            margin-bottom: 4rem;
+            margin-left: 3rem;
+        }
+    }
 
     .componentSocials {
         text-align: center;
-
+        margin: 4rem auto;
+        height: none;
+        
         @include desktop {
             text-align: right;
             margin-right: 4rem;
         }
     }
-}
 
-.logo {
-    display: block;
-    height: 60vw;
-    max-height: 20rem;
-    margin: 0rem auto;
-    
     @include desktop {
-        height: 35vw;
-        margin-left: 6%;
-        margin-top: 1%;
+        flex-direction: row;
     }
 }
+

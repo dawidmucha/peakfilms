@@ -34,7 +34,7 @@ const Contact = () => {
                 
                 <div className={styles.icons}>
                     <div className={styles.email}>
-                        <img src={email} alt='email' />
+                        <img src={email} alt='phone' />
                         <p>kontakt@peakfilms.pl</p>
                     </div>
 

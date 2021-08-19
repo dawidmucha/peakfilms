@@ -23,6 +23,9 @@ const Clients = () => {
                     <hr />
                 </h1>
             </div>
+            <div className={styles.clientsText}>
+                Poznaj firmy i instytucje, które nam zaufały i dołącz do ich grona.
+            </div>
             <Carousel
                 className={styles.carousel}
                 swipeable={true}

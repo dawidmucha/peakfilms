@@ -1,17 +1,24 @@
 import React from 'react'
-import fb from '../resources/icons/facebook.svg'
-import ig from '../resources/icons/instagram.svg'
-import yt from '../resources/icons/youtube.svg'
+import fb_w from '../resources/icons/facebook-w.svg'
+import ig_w from '../resources/icons/instagram-w.svg'
+import yt_w from '../resources/icons/youtube-w.svg'
+import fb_g from '../resources/icons/facebook-g.svg'
+import ig_g from '../resources/icons/instagram-g.svg'
+import yt_g from '../resources/icons/youtube-g.svg'
 import styles from './Socials.module.scss'
 
-const Socials = () => {
+const Socials = ({ isGolden }) => {
+    const yt = isGolden ? yt_g : yt_w
+    const fb = isGolden ? fb_g : fb_w
+    const ig = isGolden ? ig_g : ig_w
+
     return (
         <div className={styles.container}>
-                <a href='https://www.facebook.com/peakfilms/' target='_blank' rel="noopener noreferrer">
-            <div>
+            <a href='https://www.facebook.com/peakfilms/' target='_blank' rel="noopener noreferrer">
+                <div>
                     <img src={fb} alt='link-to-facebook' />
-            </div>
-                </a>
+                </div>
+            </a>
                 
             <a href='https://www.instagram.com/_peakfilms/' target='_blank' rel="noopener noreferrer">
             <div>
@@ -24,9 +31,6 @@ const Socials = () => {
                 <img src={yt} alt='link-to-youtube' />
             </div>
             </a>
-                
-            
-            
         </div>
     )
 }
