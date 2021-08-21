@@ -14,7 +14,7 @@ const Footer = () => {
                 from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
             </div>
             <div className={styles.author}>
-                design by peakfilms, code by <a href='https://github.com/dawidmucha'>dawid mucha</a>
+                website by peakfilms and <a href='https://github.com/dawidmucha'>dawid mucha</a>
             </div>
             </h6>
         </footer>

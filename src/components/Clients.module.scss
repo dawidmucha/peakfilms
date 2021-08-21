@@ -14,103 +14,166 @@
         font-size: 1.1rem;
         margin: 0rem 0rem 0.7rem 3rem;
     }
+}
+
+
+.slide1 {
+    // border: 4px solid #AD7835;
+    // background-color: white;
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 25% 25% 25% 25% / 50% 50%;
+
+    @include desktop {
+        grid-template: 50% 50% / 23% 23% 8% 23% 23%;
+
+    }
+    
+    div {
+        position: absolute;
+
+        @include desktop {
+            position: inherit;
+        }
+    }
 
     a {
-        .imageContainer {
-            background-color: white;
-            border: 2px solid black;
-            border-radius: 50%;
-            width: 24vw;
-            height: 24vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: black;
-            font-size: 1.4rem;
+        img {
+            width: 55%;
+            padding: 0;
 
             @include desktop {
-                width: 16vw;
-                height: 16vw;
-                font-size: 2rem;
-            }
-
-            &::before {
-                content: '';
-                position: absolute;
-                background-size: 24vw;
-                width: 24vw;
-                height: 24vw;
-                transition: .05s ease-out;
-                
-                @include desktop {
-                    background-size: 16vw;
-                    height: 16vw;
-                    width: 16vw;
-                }
-            }
-
-            &:hover::before {
-                filter: blur(4px) opacity(0.5);
-            }
-
-            p {
-                display: none;
-                width: 90%;
-                height: 90%;
-            }
-
-            &:hover > p {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                z-index: 1;
+                width: 100%;
+                max-width: 400px;
             }
         }
-
-        
     }
 
-    a div:global(#logo1)::before {
-        background-image: url("../resources/clients/1-cieszyn.png");
+    * {
+        padding: 0.4rem;
     }
-    a div:global(#logo2)::before {
-        background-image: url("../resources/clients/2-ustron.png");
+}
+
+.slide2 {
+    width: 80vw;
+    margin: auto auto;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    @include desktop {
+        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
     }
-    a div:global(#logo3)::before {
-        background-image: url("../resources/clients/3-wisla.png");
+
+    a {
+        grid-column-end: span 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 55%;
+            
+            @include desktop {
+                width: 66%;
+            }
+        }
     }
-    a div:global(#logo4)::before {
-        background-image: url("../resources/clients/4-browar-cieszyn.png");
+
+    .pair1 {
+        @include desktop {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
     }
-    a div:global(#logo5)::before {
-        background-image: url("../resources/clients/5-wislanskie-ck.png");
+
+    .pair2 {
+        @include desktop {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 3;
+            grid-column-end: 5;
+            
+        }
     }
-    a div:global(#logo6)::before {
-        background-image: url("../resources/clients/6-rdzawe-diamenty.png");
+
+    .pair3 {
+        @include desktop {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 7;
+            grid-column-end: 9;
+            
+        }
     }
-    a div:global(#logo7)::before {
-        background-image: url("../resources/clients/7-krakowska-pracownia-tat.png");
+
+    .pair4 {
+        @include desktop {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 9;
+            grid-column-end: 11;
+            
+        }        
     }
-    a div:global(#logo8)::before {
-        background-image: url("../resources/clients/8-phoenix.png");
+
+    .pair5 {
+        @include desktop {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 4;
+            grid-column-end: 6;
+            
+        }
     }
-    a div:global(#logo9)::before {
-        background-image: url("../resources/clients/9-polodnie-events.png");
+
+    .pair6 {
+        @include desktop {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 6;
+            grid-column-end: 8;
+            
+        }
     }
-    a div:global(#logo10)::before {
-        background-image: url("../resources/clients/10-issa-tour.png");
+
+    .last1 {
+        grid-column-end: span 2;
+
+        @include desktop {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
     }
-    a div:global(#logo11)::before {
-        background-image: url("../resources/clients/11-skolnity.png");
+
+    .last2 {
+        grid-column-end: span 2;
+
+        @include desktop {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 5;
+            grid-column-end: 7;
+        }
     }
-    a div:global(#logo12)::before {
-        background-image: url("../resources/clients/12-ski-carv.png");
-    }
-    a div:global(#logo13)::before {
-        background-image: url("../resources/clients/13-gastro-mix.png");
+
+    .last3 {
+        grid-column-end: span 2;
+
+        @include desktop {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 8;
+            grid-column-end: 10;
+        }
     }
 }
 
